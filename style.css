@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+.logo{
+  font-weight: bold;
+  padding: 10px 20px; 
+}
+.logo img {
+  height: 83px; 
+  width: auto;
+}
+
+
+.side-logo img {
+  height: 30px;  /* Adjust size as needed */
+  width: auto;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+
+}
+.side-logo img:hover {
+  transform: translateY(-5px);
+}
+
+.navbar{
+   display:flex;
+  align-items: center;
+  gap: 20px 10px;
+  background-color: #ffffff;
+  height: 60px    ;         
+  padding: 10px 20px;
+}
+
+
+.search-bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  width: 250px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: left;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color:#050505;
+    font-weight: 400;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+  .hero-bg {
+    width: 100%;
+    height: 100%; /*white*/
+    object-fit: cover;        
+    object-position: top;     
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+  .overlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 600px;
+  }
+  .overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #ffffff;
+    
+  }
+.tagline {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #ffffff;
+
+  }
+  .btn {
+    background-color: #7f5d3b;
+    color: white;
+    padding: 11px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.5s ;
+  
+  }
+  .btn:hover{
+    background-color: #333;
+  }
+  .category-bar {
+    position: absolute;
+    
+    width: 100%;
+    background-color: #f4c98d;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.1); /* Optional shadow for separation */
+
+  }
+  
+  
+  
+  .category-bar ul {
+    display: flex;
+    gap: 110px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-bar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: transmission 0.3 ease;
+  }
+  .category-bar a:hover{
+
+      color: #b45c00; /* Change text color on hover */
+      transform: translateY(-3px);
+
+  }
+  
+  .products-section{
+    padding: 150px;
+    max-width: 1200px;
+    margin: 0px auto 100px auto;
+    
+    background-color: #f4c98d;
+    position: relative;
+    z-index: 1;
+    
+  }
+  
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    top: -70px; /* Shifts the header a little up */
+  }
+  .section-header h2 {
+    font-size: 2.5em;
+    color: #b45c00;
+    margin-bottom: 10px;
+  }
+  .underline {
+    width: 160px;       /* Adjust width as needed */
+    height: 4px;
+    background: #b45c00;
+    margin: 0px auto 20px auto;  /* Centered with spacing below */
+  }
+  
+  /* Style for the subheading below the underline */
+  .subheading {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 95px;
+  }
+  
+  .product-card {
+    background-color: #ffe0b2;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+  }
+  .product-img-container {
+    width: 100%;
+    height: 300px; /* Fixed height for all images */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .product-img-container img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover; /* Keeps the image nicely cropped */
+    display: block;
+  }
+  
+  
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    margin-top: 15px;
+    color: #d2691e;
+  }
+  
+  .product-card p {
+    font-size: 0.95em;
+    color: #5d4037;
+  }
+  /* Modal Background */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* When Targeted, Show Modal */
+.modal:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Box */
+.modal-content {
+  background: #ffe0b2;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}/*buy as*/
+
+
+.signup-text {
+  text-align: center;
+  margin-top: 15px;
+}/*dont have an acc*/
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-content form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #b45c00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  align-self: center;
+}
+.underline-link {
+  text-decoration: underline;
+  color: #8B0000; /* Optional: color for emphasis */
+  font-weight: bold; /* Optional: make it stand out */
+}
+
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Form Inputs */
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.modal-content button {
+  padding: 10px;
+  background-color: #d2691e;;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.modal-content button:hover {
+  background-color: #8f1111;
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+
