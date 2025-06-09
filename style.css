@@ -462,6 +462,14 @@ justify-content: center;
 gap: 10px;
 margin-top: 15px;
 }/*buy as*/
+.forgot {
+  color: #8B0000;
+  text-align: center;
+  display: block;       /* Ensures it respects text-align */
+  width: 100%;          /* Ensures full width */
+  margin-top: 20px;
+ }
+ 
 
 
 .signup-text {
