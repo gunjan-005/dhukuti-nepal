@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <title>Dhukuti Nepal - Cart View</title>
+ <link rel="stylesheet" href="view.css" />
+</head>
+<body>
+   <div class="navbar">
+       <div class="logo">
+           <img src="images/logo.jpeg" width="100px">
+           </div>
+           <nav>
+               <ul>
+                   <li><a href="about.html">ABOUT US</a></li>
+                   <li><a href="index.html#contact">CONTACT US</a></li>
+               </ul>
+           </nav>
+  
+   <div class="search-bar">
+       <form action="#" method="get">
+         <input type="text" placeholder="Search products">
+         <button type="submit">Search</button>
+       </form>
+     </div>
+     <div class="side-logo">
+       <a href="#loginModal"><img src="images/people.png" style="cursor:pointer;"></a>
+
+
+
+
+       <a href="reviewcart.html"><img src="images/trolley.png" ></a>
+   </div>
+</div>
+   </div>
+</div>
+
+
+
+
+<div class="cart-container">
+<h2>Your Cart</h2>
+
+
+<div class="cart-header">
+ <div>PRODUCT</div>
+ <div>PRICE</div>
+ <div>QUANTITY</div>
+ <div>TOTAL</div>
+</div>
+
+
+<div class="cart-item">
+ <div class="product-info">
+   <img src="images/bamboo.jpg" alt="Product">
+ <div>
+     <p class="title">Bamboo Basket</p>
+     <div class="icons">
+       <img src="images/delete.png">
+     </div>
+   </div>
+ </div>
+ <div class="price">Rs. 200</div>
+ <div class="quantity">
+   <button>-</button>
+   <span>1</span>
+   <button>+</button>
+ </div>
+ <div class="total">Rs. 200</div>
+</div>
+ <!-- Product 2 -->
+<div class="cart-item">
+ <div class="product-info">
+   <img src="images/nepali.jpg" alt="Product">
+ <div>
+     <p class="title">Woollen Braids</p>
+     <div class="icons">
+       <img src="images/delete.png">
+     </div>
+   </div>
+ </div>
+ <div class="price">Rs. 400</div>
+ <div class="quantity">
+   <button>-</button>
+   <span>1</span>
+   <button>+</button>
+ </div>
+ <div class="total">Rs. 400</div>
+ </div>
+<!-- Summary Section -->
+
+
+<div class="cart-summary">
+   <div class="summary-line">
+       <span>Sub Total</span>
+       <span>Rs.600</span>
+   </div>
+   <div class="summary-line">
+       <span>Delivery Charge</span>
+       <span>Rs. 60</span>
+   </div>
+   <div class="summary-line total-line">
+       <span>Total</span>
+       <span>Rs. 660</span>
+   </div>
+</div>
+</body>
+</html>
+

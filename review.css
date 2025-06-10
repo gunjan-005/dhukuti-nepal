@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+   
+    background: #f4c98d;
+  }
+  .logo{
+    font-weight: bold;
+    padding: 10px 20px;
+    }
+    .logo img {
+    height: 83px;
+    width: auto;
+    }
+    .side-logo img {
+        height: 30px;  /* Adjust size as needed */
+        width: auto;
+        margin-left: 20px;
+        transition: transform 0.3s ease;
+       
+        }
+        .side-logo img:hover {
+        transform: translateY(-5px);
+        }
+     .navbar{
+        display:flex;
+       align-items: center;
+       gap: 20px 10px;
+       background-color: #ffffff;
+       height: 60px    ;        
+       padding: 10px 20px;
+      
+      
+       }
+      
+      
+       .search-bar {
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+      }
+     
+      .search-bar form {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: white;
+      }
+     
+      .search-bar input[type="text"] {
+      padding: 8px 15px;
+      border: none;
+      outline: none;
+      width: 250px;
+      }
+     
+      .search-bar button {
+      padding: 8px 15px;
+      background-color: #7f5d3b;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.5s ;
+      }
+      .search-bar button:hover{
+      background-color:#483421;
+    }
+    nav{
+     flex: 1;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+    
+   }
+   nav ul{
+     display: flex;
+     list-style-type: none;
+     gap: 20px;
+    
+   }
+   nav li a {
+    text-decoration: none;
+    color: #050505;
+    font-weight: 400;
+    transition: transform 0.5s ease;
+    display: inline-block;/*for popping up*/
+    }
+    nav ul li a:hover {
+    color:#774e28;
+    text-decoration: underline;
+   
+    }
+
+
+
+ /* Product row */
+ .cart-container {
+  max-width: 1000px;
+  margin: auto;/*aligns to center the product and all*/
+  padding: 40px 80px;/*top,bottom,left,right*/
+  background: #f4c98d; /* or your brand background */
+ 
+ 
+}
+.cart-container h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #000; /* Optional: make it stand out */
+}
+ .cart-header,
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 12px 0;
+  column-gap: 20px;
+}
+ .cart-header {
+  font-weight: 600;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+ .cart-item {
+ 
+  border-bottom: 1px solid #000; /* Solid underline between products */
+  padding-bottom: 20px;
+   margin-bottom: 20px; /* Space between products */
+  
+ }
+ 
+  .product-info {
+   display: flex;
+   gap: 15px;
+   align-items: center;
+   margin-bottom:15px;/*gap between two items*/
+ }
+  .product-info img {
+   width: 80px;
+   height: 80px;
+   object-fit: cover;
+   border-radius: 5px;
+ }
+  .product-name {
+   font-weight: bold;
+   margin-bottom: 5px;
+ }
+  .icons img {
+   width: 15px;
+   height: 15px;
+   margin-right: 5px;
+   cursor: pointer;
+ }
+  .quantity {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+ }
+  .quantity button {
+   padding: 4px 10px;
+   font-size: 24px;
+   border-radius: 10%;
+   border: 1px solid black;
+   background: white;
+   cursor: pointer;
+ }
+  .quantity .icon {
+   width: 20px;
+   cursor: pointer;
+ }
+  .cart-summary {
+    width: 300px;
+  
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-size: 18px;
+    height: fit-content;
+    margin-left: 55%;        /* Pushes to the right */
+    margin-top: 60px;/*for gap above*/
+  }
+   .summary-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;
+  }
+   .total-line {
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: none;
+  }
+  
+ 
+
+
+
+
+ 
