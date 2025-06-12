@@ -11,10 +11,11 @@ if (isset($_POST['seller-register'])) {
     $pan = $_POST['pan'];
     $password = $_POST['pass'];
     $cpassword = $_POST['cpass'];
-    // Hash the password securely
+
+    // Hash the password securely and validate
     if ($password === $cpassword && !empty($business_name)) {
 
-        $hashed_password =md5($password);
+        $hashed_password = md5($password);
 
         // Check if email already exists
         $check_sql = "SELECT * FROM `dhukuti_seller` WHERE `email`='$email'";
@@ -28,7 +29,7 @@ if (isset($_POST['seller-register'])) {
 
             $insert_result = mysqli_query($conn, $insert_sql);
             if ($insert_result) {
-                header("Location: ./index.php"); // redirect to login or success page
+                header("Location: ../index.php"); // ✅ Redirect to main index
                 exit();
             } else {
                 echo "Something went wrong during registration.";
@@ -39,7 +40,9 @@ if (isset($_POST['seller-register'])) {
         }
 
     } else {
-        echo "Passwords do not match or business name is empty.";
+        // Optionally you could redirect to form with error query
+        header("Location: ../index.php?error=password_mismatch_or_empty_name");
+        exit();
     }
 }
 

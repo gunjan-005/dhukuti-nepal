@@ -1,4 +1,4 @@
-index.php
+
 <?php
 session_start();         // Start the session
 ?>
@@ -284,8 +284,6 @@ session_start();         // Start the session
     </div>
   </div>
 </footer>
-
-
 
     </body>
 </html>
