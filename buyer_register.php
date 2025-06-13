@@ -1,3 +1,4 @@
+buyer_register.php
 <?php
 // Database connection
 $conn = mysqli_connect('localhost', 'root', '', 'dhukuti_nepal');
@@ -25,6 +26,7 @@ if (isset($_POST['buyer-register'])) {
     // Validation
     if ($password === $cpassword && preg_match('/^[A-Za-z ]+$/', $fullname)) {
         $hashed_pass = md5($password);
+        
 
         // Check if email already exists
         $check_sql = "SELECT * FROM dhukuti_buyer WHERE email='$email'";
@@ -42,8 +44,8 @@ if (isset($_POST['buyer-register'])) {
 
             if (mysqli_query($conn, $insert_sql)) {
                 // echo " Registration successful! Redirecting...";
-                // Redirect to main index page
-                header("Location: ../index.php");
+                // Uncomment this after testing:
+                header("Location: ./index.php");
                 exit();
             } else {
                 echo " SQL Error: " . mysqli_error($conn);
@@ -54,9 +56,7 @@ if (isset($_POST['buyer-register'])) {
         }
 
     } else {
-        // Redirect to index page with error message
-        header("Location: ../index.php?error=invalid_username_or_password_mismatch");
-        exit();
+         header("Location: ./index.php?error=invalid_username or password does not match");
     }
 
 } else {
