@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Dashboard</title>
+  <link rel="stylesheet" href="sellerdashboard.css">
+  
+</head>
+<body>
+        <div>
+
+          <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpeg" width="100px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+              <form action="#" method="get">
+                <input type="text" placeholder="Search products">
+                <button type="submit">Search</button>
+              </form>
+            </div>
+            
+            <div class="side-logo">
+                <a href="#loginModal"><img src="images/people.png" style="cursor:pointer;"></a>
+
+
+                <img src="images/trolley.png" >
+            </div>
+        </div>
+        
+
+        
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Seller Dashboard</h2>
+      <a href="#" class="active">Seller Dashboard</a>
+      <a href="#">Manage Products</a>
+      <a href="#">Orders</a>
+       <a href="#">Earnings/Transactions</a>
+       <a href="#">Settings</a>
+
+      <a href="#" class="logout">Log-out</a>
+    </aside>
+
+    <main class="main">
+      <div class="dashboard-stats">
+        <div class="upload-box">
+  <h3>Upload Product</h3>
+  <form>
+    <label for="productImage">Product Image:</label><br>
+    <input type="file" id="productImage" name="productImage" accept="image/*"><br><br>
+
+    <label for="productName">Product Name:</label><br>
+    <input type="text" id="productName" name="productName"><br><br>
+
+    <label for="productPrice">Price:</label><br>
+    <input type="number" id="productPrice" name="productPrice"><br><br>
+
+    <button type="submit">Upload</button>
+  </form>
+</div>
+        <div class="stat-box">No. of Products</div>
+        <div class="stat-box">No. of Orders</div>
+        <div class="stat-box">Total Earnings</div>
+      </div>
+      <div class="dashboard-tables">
+        <div class="table-section">
+          <h3>Manage Products</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Stock</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+
+              <!-- Product rows go here -->
+            </tbody>
+          </table>
+        </div>
+        <div class="table-section">
+          <h3>Order Management</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Total</th>
+              </tr>
+               <tr>
+                <th>3</th>
+                <th>2nd june</th>
+                <th>active</th>
+                <th>3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Order rows go here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
