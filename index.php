@@ -15,7 +15,9 @@ session_start();         // Start the session
 
           <div class="navbar">
             <div class="logo">
+            
                 <img src="images/logo.jpeg" width="100px">
+            
             </div>
             <nav>
                 <ul>

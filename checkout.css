@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+  }
+  logo{
+  font-weight: bold;
+  padding: 10px 20px; 
+  }
+  .logo img {
+  height: 83px; 
+  width: auto;
+  }
+  
+  
+  .side-logo img {
+  height: 30px;  /* Adjust size as needed */
+  width: auto;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+  
+  }
+  .side-logo img:hover {
+  transform: translateY(-5px);
+  }
+  
+  .navbar{
+   display:flex;
+  align-items: center;
+  gap: 20px 10px;
+  background-color: #ffffff;
+  height: 60px    ;         
+  padding: 10px 20px;
+  
+  }
+  
+  
+  .search-bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  }
+  
+  .search-bar form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  }
+  
+  .search-bar input[type="text"] {
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  width: 250px;
+  }
+  
+  .search-bar button {
+  padding: 8px 15px;
+  background-color: #7f5d3b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ;
+  }
+  .search-bar button:hover{
+  background-color:#483421;
+  
+  }
+  
+  nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+  nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    
+  }
+  nav li a {
+  text-decoration: none;
+  color: #050505;
+  font-weight: 400;
+  transition: transform 0.5s ease;
+  display: inline-block;/*for popping up*/
+  }
+  nav ul li a:hover {
+  color:#774e28;
+  text-decoration: underline;
+  
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: #f4c98d;
+}
+
+/* Checkout Form Section */
+.checkout-form {
+    background: #ffe0b2;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+
+}
+
+.checkout-form h2 {
+    
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Right Section */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+/* Order Summary Section */
+.order-summary {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.order-summary h3{
+    margin-bottom: 20px;
+}
+.product-summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.product-summary img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+
+.price-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    
+   
+}
+.price-details p1 {
+    font-weight: bold ;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    border-top: 1px solid #766f6f;
+}
+
+.order-summary input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Payment Section */
+.payment-section {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.payment-section h3{
+    margin-bottom: 20px;
+}
+.payment-methods {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+   
+}
+
+.method {
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+    background-color: #f5f5f5;
+    transition: background-color 0.5s, border-color 0.5s;
+}
+
+.method:hover {
+    background-color: #ffe0b2;
+}
+
+/* When selected (after clicking) */
+.method.selected {
+    background-color: #ffe0b2;
+    border-color: #7f5d3b;
+}
+
+
+
+.method img {
+    width: 40px;
+    height: 40px;
+
+}
+
+
+.place-order-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #7f5d3b;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.place-order-btn:hover {
+    background-color: #5e5e5e;
+}

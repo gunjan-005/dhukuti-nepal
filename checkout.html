@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dhukuti Nepal-Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div>
+
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.php">
+              <img src="images/logo.jpeg" width="100px">
+            </a>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="">ABOUT US</a></li>
+                  <li><a href="">CONTACT US</a></li>
+              </ul>
+          </nav>
+          <div class="search-bar">
+            <form action="#" method="get">
+              <input type="text" placeholder="Search products">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+          
+          <div class="side-logo">
+              <a href="#loginModal"><img src="images/people.png" style="cursor:pointer;"></a>
+
+
+              <img src="images/trolley.png" >
+          </div>
+      </div>
+      <main class="container">
+
+        <!-- Left Section: Checkout Form -->
+        <section class="checkout-form">
+            <h2>Checkout</h2>
+
+            <!-- General Information -->
+            <div class="section">
+                <h3>1. General Information</h3>
+                <form>
+                    <div class="form-group">
+                        <label>Full Name <span>*</span></label>
+                        <input type="text" placeholder="eg: Ram Bahadur" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="eg: ram@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number <span>*</span></label>
+                        <input type="tel" placeholder="eg: 9862200000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Order Note (any message for us)</label>
+                        <input type="text" placeholder="eg: PLease wrap it carefully">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Delivery Address -->
+            <div class="section">
+                <h3>2. Delivery Address</h3>
+                <form>
+                    <div class="form-group">
+                        <label>City <span>*</span></label>
+                        <select required>
+                            <option>Kathmandu</option>
+                            <option>Lalitpur</option>
+                            <option>Bhaktapur</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Address <span>*</span></label>
+                        <input type="text" placeholder="eg: Sanepa" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Landmark</label>
+                        <input type="text" placeholder="eg: Times Square Apartment">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Right Section: Order Summary and Payment -->
+        <section class="right-section">
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="product-summary">
+                    <img src="images/pashmina2.jpg" alt=" Pashmina">
+                    <div>
+                        <p><strong>Pashmina</strong></p>
+                        <p>Rs 1,500 x 1</p>
+                    </div>
+                </div>
+
+                <div class="price-details">
+                    <p>Sub-total: <span>Rs 1,500</span></p>
+                    <p>Delivery Charge: <span>Rs 60</span></p>
+
+                    <p1>Total: <span> Rs 1,560</span> </p1>
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="payment-section">
+                <h3>Payment Methods</h3>
+                <div class="payment-methods">
+                    <div class="method selected">
+                        <img src="images/COD.png" width="17px" height="17px" alt="Cash">
+                        <p>Cash on delivery</p>
+                    </div>
+                    <div class="method">
+                        <img src="images/online pay.png" width="17px" height="17px" alt="QR">
+                        <p>QR Payment</p>
+                    </div>
+                </div>
+                <button class="place-order-btn">Place Order</button>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        const methods = document.querySelectorAll('.method');
+        methods.forEach(method => {
+            method.addEventListener('click', () => {
+                methods.forEach(m => m.classList.remove('selected')); // remove from others
+                method.classList.add('selected'); // add to clicked one
+            });
+        });
+    </script>
+        
+     
+
+
+</body>
+</html>
