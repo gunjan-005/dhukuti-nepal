@@ -26,10 +26,10 @@ session_start();         // Start the session
                 </ul>
             </nav>
             <div class="search-bar">
-              <form action="#" method="get">
-                <input type="text" placeholder="Search products">
-                <button type="submit">Search</button>
-              </form>
+              <form action="search.php" method="get">
+  <input type="text" name="query" placeholder="Search products" required>
+  <button type="submit">Search</button>
+</form>
             </div>
             <?php
             if(isset($_SESSION['b_id']))
