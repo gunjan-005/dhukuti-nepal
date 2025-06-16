@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Payments</title>
+  <link rel="stylesheet" href="manage-payments.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+        <img src="images/logo.jpeg" width="100px">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+      <form action="#" method="get">
+        <input type="text" placeholder="Search products">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="side-logo">
+        <a href="#loginModal"><img src="images/people.png" style="cursor:pointer;"></a>
+        <img src="images/trolley.png">
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin Dashboard</h2>
+      <a href="#">Manage Categories</a>
+      <a href="#">Manage Payments</a>
+      <a href="#" class="logout"> Log-out</a>
+    </aside>
+
+    <div class="content">
+      <h2>Buyer Payment Records</h2>
+      <table class="payment-table">
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Buyer</th>
+            <th>Date</th>
+            <th>Amount Paid</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1766347863</td>
+            <td>Raman</td>
+            <td>2nd June</td>
+            <td>Rs. 2000</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>1024872263</td>
+            <td>Sita</td>
+            <td>5th June</td>
+            <td>Rs. 3000</td>
+            <td>Completed</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Seller Payout Summary</h2>
+      <table class="payment-table">
+        <thead>
+          <tr>
+            <th>Seller</th>
+            <th>Total Sales</th>
+            <th>Commission (10%)</th>
+            <th>Payable Amount</th>
+            <th>Next Payout Date</th>
+            <th>Payment Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rakura</td>
+            <td>Rs. 2000</td>
+            <td>Rs. 200</td>
+            <td>Rs. 1800</td>
+            <td>15th June</td>
+            <td>Left to be Paid</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+
+</body>
+</html>

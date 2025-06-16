@@ -195,7 +195,7 @@
   }
   
   .logout {
-    margin-top: 350px;
+    margin-top: 550px;
     color: #d6d6d6;
 
   }
@@ -233,7 +233,7 @@
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 8px;
-    width: 400px;
+    width: 300px;
     text-align: center;
     margin: 10px;
   }
