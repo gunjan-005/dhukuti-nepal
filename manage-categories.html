@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Manage Product Categories</title>
+  <link rel="stylesheet" href="manage-categories.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpeg" width="100px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+          <form action="#" method="get">
+            <input type="text" placeholder="Search products">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="side-logo">
+            <a href="#loginModal"><img src="images/people.png" style="cursor:pointer;"></a>
+            <img src="images/trolley.png">
+        </div>
+      </div>
+    
+      <div class="container">
+        <aside class="sidebar">
+          <h2>Admin Dashboard</h2>
+          <a href="#" class="active">Manage Categories</a>
+          
+          <a href="#">Manage Payments</a>
+          <a href="#" class="logout"> Log-out</a>
+        </aside>
+  
+
+  <div class="content">
+    <h2>Assign Categories to Products</h2>
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Seller</th>
+          <th>Current Category</th>
+          <th>Assign New Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sencha Green Tea</td>
+          <td>Rakura</td>
+          <td>Unassigned</td>
+          <td>
+            <select>
+              <option value="">Select Category</option>
+              <option value="Handicrafts">Handicrafts</option>
+              <option value="Gifts and Souvenirs">Gifts and Souvernirs</option>
+              <option value="Accessories">Accessories</option>
+              <option value="Health and Wellness">Health and Wellness</option>
+              <option value="Food & Beverages">Food & Beverages</option>
+
+            </select>
+          </td>
+          <td><button class="assign-btn">Assign</button></td>
+        </tr>
+        <tr>
+          <td>Lokta Paper Notebook</td>
+          <td>Kumari Arts</td>
+          <td>Gifts and Souvenirs</td>
+          <td>
+            <select>
+                <option value="">Select Category</option>
+                <option value="Handicrafts">Handicrafts</option>
+                <option value="Gifts and Souvenirs">Gifts and Souvernirs</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Health and Wellness">Health and Wellness</option>
+                <option value="Food & Beverages">Food & Beverages</option>
+            </select>
+          </td>
+          <td><button class="assign-btn">Assign</button></td>
+        </tr>
+        <tr>
+            <td>Hand Carved Wooden Mask</td>
+            <td>Himalayan Crafts</td>
+            <td>unassigned</td>
+            <td>
+              <select>
+                  <option value="">Select Category</option>
+                  <option value="Handicrafts">Handicrafts</option>
+                  <option value="Gifts and Souvenirs">Gifts and Souvernirs</option>
+                  <option value="Accessories">Accessories</option>
+                  <option value="Health and Wellness">Health and Wellness</option>
+                  <option value="Food & Beverages">Food & Beverages</option>
+              </select>
+            </td>
+            <td><button class="assign-btn">Assign</button></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
