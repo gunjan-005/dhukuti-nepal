@@ -1,3 +1,14 @@
+<?php
+session_start();
+$conn=mysqli_connect('localhost','root','','dhukuti_nepal'); 
+if (!isset($_SESSION['admin_id'])) {
+    // Redirect to login page if user is not logged in
+    header("Location:../index.php");
+    exit();
+}
+$sql="SELECT * FROM `dhukuti_category`";
+$result = mysqli_query($conn, $sql);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

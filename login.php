@@ -15,18 +15,16 @@ if (isset($_POST['login'])) {
     echo $email;
     echo $pass;
     if ($email === "dhukutinepal_admin@gmail.com") {
-    $sql = "SELECT * FROM `admin` WHERE `email` = '$email' AND `password` = '$pass'";
+    $sql = "SELECT * FROM `dhukuti_admin` WHERE `email` = '$email' AND `password` = '12345'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['admin_id'] = $row['a_id'];
+        $_SESSION['admin_id'] = $row['admin_id'];
         $_SESSION['name'] = "Admin";
         $_SESSION['email'] = $row['email'];
         $now = date('Y-m-d H:i:s');
-        mysqli_query($conn, "UPDATE `admin` SET `last_login` = '$now' WHERE `email` = '$email'");
-
-        header("Location: ../admin/adminpage.php");
+        header("Location: ../admindashboard.php");
     } else {
         header("Location: ../index.php?error=invalid_admin");
     }
