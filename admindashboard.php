@@ -54,8 +54,8 @@ $result = mysqli_query($conn, $sql);
       <h2>Admin Dashboard</h2>
       
      
-       <a href="">Manage Categories</a>
-       <a href="manage-categories.html">Manage Payments</a>
+       <a href="manage-categories.html">Manage Categories</a>
+       <a href="manage-payments.html">Manage Payments</a>
        
 
        <a href="#" class="logout"> Log-out</a>
